@@ -1,4 +1,5 @@
 import "./App.css";
+import Tada from 'react-reveal/Tada';
 import Slide from 'react-reveal/Slide';
 import React, { useState, useEffect } from "react";
 const getLocalItem = () => {
@@ -37,7 +38,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="todos">
+        <Tada>
         <h1>Todo list </h1>
+
+        </Tada>
         <input
           type="text"
           value={input}
@@ -48,7 +52,7 @@ export default function App() {
           addtodo
         </button>
         <ul className="list-group">
-          <li style={{ textAlign: "center" }}>add todo </li>
+          <li className="todo-txt" style={{ textAlign: "center" }}>add todo </li>
           {todos.map((i, id) => (
             <>
               <Slide top>

@@ -66,8 +66,8 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
-}
 
+}
 .fa-check:hover {
   cursor: pointer;
   transform: scale(1.5, 1.5);
