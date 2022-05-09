@@ -79,7 +79,6 @@
 .fa-trash:hover {
   cursor: pointer;
   transform: scale(1.2, 1.2);
-
 }
 
 .todos h1 {

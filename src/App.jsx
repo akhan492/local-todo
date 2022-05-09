@@ -51,8 +51,9 @@ export default function App() {
         <button className="addbtn" onClick={addtodo}>
           addtodo
         </button>
+        <h1 style={{fontSize : "1.8rem"}}>add todo</h1>
         <ul className="list-group">
-          <li className="todo-txt" style={{ textAlign: "center" }}>add todo </li>
+          {/* <li className="todo-txt" style={{ textAlign: "center" }}>add todo </li> */}
           {todos.map((i, id) => (
             <>
               <Slide top>
