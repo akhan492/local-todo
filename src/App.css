@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  text-align: center;
+  background: orange;
+  width: 100vw;
+  height: 100vh;
+}
+.todos .addbtn {
+  margin: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border-radius: 15px;
+}
+.todos input:hover {
+  cursor: pointer;
+}
+.todos .fa-solid {
+  color: black;
+}
+
+.todos input:focus {
+  color: black;
+  background-color: white;
+}
+.todos .addbtn:hover {
+  color: black;
+  background-color: white;
+  border-radius: 5px 0;
+  cursor: pointer;
+}
+.todos input {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1.5px solid wheat;
+  height: 2.5rem;
+  text-align: center;
+}
+/* .App li:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+.App li:nth-child(odd) {
+  background-color: blue;
+  color: wheat;
+} */
+.App li {
+  font-family: cursive;
+  font-size: 2rem;
+  list-style-type: circle;
+  text-transform: capitalize;
+  list-style: none;
+  /* display: flex;
+  justify-content: space-evenly; */
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fa-check:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+  /* width: auto; */
+}
+.mark {
+  text-decoration: line-through;
+}
+.fa-trash:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+
+}
+
+.todos h1 {
+  margin: 15px;
+  padding: 15px;
+  color: bisque;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
